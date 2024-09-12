@@ -2,13 +2,15 @@
   "name": "monorepo",
   "version": "1.0.0",
   "description": "monorepo",
+  "private": true,
   "workspaces": [
     "server",
     "app"
   ],
   "scripts": {
-    "start:app": "npm run start --workspace=app",
-    "start:server": "npm run start --workspace=server"
+    "start:app": "cd app && yarn start",
+    "start:server": "cd app && yarn start",
+    "test": "cd app && yarn test"
   },
   "engines": {
     "node": "^20"
