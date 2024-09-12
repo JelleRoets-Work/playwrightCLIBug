@@ -1,0 +1,16 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "monorepo",
+  "workspaces": [
+    "server",
+    "app"
+  ],
+  "scripts": {
+    "start:app": "npm run start --workspace=app",
+    "start:server": "npm run start --workspace=server"
+  },
+  "engines": {
+    "node": "^20"
+  }
+}
